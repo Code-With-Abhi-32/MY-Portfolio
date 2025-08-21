@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MY Portfolio Website</title>
+
+  <!-- Bootstrap 5.3.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Your CSS -->
+  <link rel="stylesheet" href="Style.css" />
+
+  <!-- AOS Animation Library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+  <!-- Minimal fixes to ensure project card image/hover work even if external CSS misses it -->
+  <style>
+    /* Optional: keep if not already in merged_portfolio.css */
+    .project-card {
+      border-radius: 15px;
+      overflow: hidden;
+      transition: transform .3s ease, box-shadow .3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+    }
+
+    .project-card .card-img-wrapper {
+      height: 200px;
+      overflow: hidden;
+    }
+
+    .project-card .card-img-top {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform .5s ease;
+    }
+
+    .project-card:hover .card-img-top {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+
+<body class="bg-black">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-black py-3">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="Logo.PNG" alt="Logo" class="navbar-logo" data-aos="fade-down" data-aos-duration="3000" />
+      </a>
+
+      <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+        <ul class="navbar-nav m-auto mb-2 mb-lg-0 gap-3">
+          <li class="nav-item"><a class="nav-link text-light" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link text-light" href="#about-section">About</a></li>
+          <li class="nav-item"><a class="nav-link text-light" href="#Skills-Section">Skills</a></li>
+          <li class="nav-item"><a class="nav-link text-light" href="#Projects">Project</a></li>
+          <li class="nav-item"><a class="nav-link text-light" href="#Service-section">Services</a></li>
+          <li class="nav-item"><a class="nav-link text-light" href="#Contact-section">Contact</a></li>
+        </ul>
+        <a class="btn mybtn rounded-0 text-uppercase bg-green" href="#Contact-section">Let's Talk</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main -->
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section d-flex align-items-center">
+      <div class="container">
+        <div class="row align-items-center gap-5 gap-lg-0">
+          <div class="col-lg-6">
+            <span class="text-white text-uppercase main-txt">Hello I'm</span>
+            <h1 class="text-white fw-bold">
+              Data Analyst & <span class="txt-green">Web Developer</span>
+            </h1>
+            <p class="txt-gray my-4 para">
+              Hi, I am Abhishek Kumar, an MCA student passionate about Data Analytics and Web Development.
+              Welcome to my Portfolio.
+            </p>
+
+            <!-- Icons Section Here... -->
+
+              <div class="d-flex justify-content-left social-icons">
+                <!-- GitHub -->
+                <a href="https://github.com/yourusername" target="_blank" class="icon-circle">
+                  <i class="bi bi-github"></i>
+                </a>
+
+                <!-- Instagram -->
+                <a href="https://instagram.com/yourusername" target="_blank" class="icon-circle">
+                  <i class="bi bi-instagram"></i>
+                </a>
+
+                <!-- WhatsApp -->
+                <a href="https://wa.me/91XXXXXXXXXX" target="_blank" class="icon-circle">
+                  <i class="bi bi-whatsapp"></i>
+                </a>
+
+                <!-- LinkedIn -->
+                <a href="https://linkedin.com/in/yourusername" target="_blank" class="icon-circle">
+                  <i class="bi bi-linkedin"></i>
+                </a>
+              </div>
+            
+
+            <a class="btn mybtn rounded-0 text-uppercase bg-green" data-aos="fade-right" data-aos-duration="3000"
+              href="#">Download CV</a>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-left" data-aos-duration="3000">
+            <div class="image-container mx-auto"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="abc" id="about-section">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 glow">
+            <section class="stats-section text-center py-5">
+              <div class="container">
+                <div class="position-relative d-inline-block">
+                  <div class="neon-circle"></div>
+                  <img src="Metoo.jpg" alt="Profile" class="profile-img" />
+
+                  <div class="stat-circle stat1">
+                    <h4>5+</h4>
+                    <p>Completed Projects</p>
+                  </div>
+                  <div class="stat-circle stat2">
+                    <h4>10+</h4>
+                    <p>Certifications</p>
+                  </div>
+                  <div class="stat-circle stat3">
+                    <h4>MCA</h4>
+                    <p>Student</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <div class="col-lg-6">
+            <span class="text-white text-uppercase main-txt">Let me introduce myself</span>
+            <h2 class="txt-green fw-semibold">About me</h2>
+            <h5 class="text-white mt-4">A story of hard work and perseverance</h5>
+            <p class="txt-gray para">
+              Hi, I'm Abhishek, a Web Developer and aspiring Data Analyst passionate about
+              creating impactful digital solutions. I specialize in building responsive, user-friendly websites
+              and expanding my skills to analyze and visualize data for smarter decision making.
+            </p>
+
+            <h5 class="text-white mt-4">Contact</h5>
+            <p class="txt-gray para">
+              Want to say hi or start a project together? Feel free to reach out.
+              <a href="mailto:kumarabhishek800287@gmail.com" class="txt-green d-block">kumarabhishek800287@gmail.com</a>
+            </p>
+            <a class="btn mybtn rounded-0 text-uppercase bg-green" href="#contact">Hire Me</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="mx-auto" id="Skills-Section">
+      <div class="container py-5 mx-auto">
+        <h2 class="text-center mb-5">💻 Technical Skills</h2>
+
+        <!-- Row 1 -->
+        <div class="row g-4">
+          <div class="col-12 col-sm-6 col-md-3 d-flex justify-content-center" data-aos="flip-up">
+            <div class="card mx-auto card-hover" style="max-width: 20rem;">
+              <img src="C Language.webp" class="card-img-top" style="height: 15rem; object-fit: cover;"
+                alt="C Language" />
+              <div class="card-body text-center">
+                <h5 class="card-title">C Programming</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-3 d-flex justify-content-center" data-aos="flip-down">
+            <div class="card mx-auto card-hover" style="max-width: 20rem;">
+              <img src="C++ Programming.webp" class="card-img-top" style="height: 15rem; object-fit: cover;"
+                alt="C++ Programming" />
+              <div class="card-body text-center">
+                <h5 class="card-title">C++ Programming</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-3 d-flex justify-content-center" data-aos="flip-left">
+            <div class="card mx-auto card-hover" style="max-width: 20rem;">
+              <img src="Python language.webp" class="card-img-top" style="height: 15rem; object-fit: cover;"
+                alt="Python programming" />
+              <div class="card-body text-center">
+                <h5 class="card-title">Python Programming</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-3 d-flex justify-content-center" data-aos="flip-right">
+            <div class="card mx-auto card-hover" style="max-width: 20rem;">
+              <img src="Html5.webp" class="card-img-top" style="height: 15rem; object-fit: cover;" alt="HTML5" />
+              <div class="card-body text-center">
+                <h5 class="card-title">HTML5</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Row 2 -->
+        <div class="row g-4 mt-4">
+          <div class="col-12 col-sm-6 col-md-3 d-flex justify-content-center" data-aos="fade-right">
+            <div class="card mx-auto card-hover" style="max-width: 20rem;">
+              <img src="CSS 3.webp" class="card-img-top" style="height: 15rem; object-fit: cover;" alt="CSS" />
+              <div class="card-body text-center">
+                <h5 class="card-title">CSS3</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-3 d-flex justify-content-center" data-aos="fade-right">
+            <div class="card mx-auto card-hover" style="max-width: 20rem;">
+              <img src="Javascript.jpg" class="card-img-top" style="height: 15rem; object-fit: cover;"
+                alt="JavaScript" />
+              <div class="card-body text-center">
+                <h5 class="card-title">JavaScript</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-3 d-flex justify-content-center" data-aos="fade-left">
+            <div class="card mx-auto card-hover" style="max-width: 20rem;">
+              <img src="bootstrap-social.png" class="card-img-top" style="height: 15rem; object-fit: cover;"
+                alt="Bootstrap" />
+              <div class="card-body text-center">
+                <h5 class="card-title">Bootstrap</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-3 d-flex justify-content-center" data-aos="fade-left">
+            <div class="card mx-auto card-hover" style="max-width: 20rem;">
+              <img src="PHP_Orignal.webp" class="card-img-top" style="height: 15rem; object-fit: cover;" alt="PHP" />
+              <div class="card-body text-center">
+                <h5 class="card-title">PHP</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Professional Skills -->
+        <h2 class="text-center mt-5 mb-5">🤝 Professional Skills</h2>
+
+        <div class="row g-4">
+          <div class="col-12 col-sm-6 col-md-3 d-flex justify-content-center" data-aos="fade-right">
+            <div class="card mx-auto card-hover" style="max-width: 20rem;">
+              <img src="Communication Image.jpg" class="card-img-top" style="height: 15rem; object-fit: cover;"
+                alt="Communication" />
+              <div class="card-body text-center">
+                <h5 class="card-title">Communication</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-3 d-flex justify-content-center" data-aos="fade-right">
+            <div class="card mx-auto card-hover" style="max-width: 20rem;">
+              <img src="Teamwork Image.avif" class="card-img-top" style="height: 15rem; object-fit: cover;"
+                alt="Teamwork" />
+              <div class="card-body text-center">
+                <h5 class="card-title">Teamwork</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-3 d-flex justify-content-center" data-aos="fade-left">
+            <div class="card mx-auto card-hover" style="max-width: 20rem;">
+              <img src="Problem_Solving_image.webp" class="card-img-top" style="height: 15rem; object-fit: cover;"
+                alt="Problem Solving" />
+              <div class="card-body text-center">
+                <h5 class="card-title">Problem Solving</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-3 d-flex justify-content-center" data-aos="fade-left">
+            <div class="card mx-auto card-hover" style="max-width: 20rem;">
+              <img src="Leadership image.webp" class="card-img-top" style="height: 15rem; object-fit: cover;"
+                alt="Leadership" />
+              <div class="card-body text-center">
+                <h5 class="card-title">Leadership</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Project Section -->
+    <section id="Projects" class="py-5 bg-black">
+      <div class="container">
+        <h2 class="text-center mb-5">🚀 My Projects</h2>
+        <div class="row g-4">
+
+          <!-- Project 1 -->
+          <div class="col-12 col-sm-6 col-md-4" data-aos="zoom-in-up">
+            <div class="card project-card h-100 bg-dark text-white border-0 shadow-lg">
+              <div class="card-img-wrapper">
+                <img src="Project 1_image.png" class="card-img-top" alt="Hospital Management System" />
+              </div>
+              <div class="card-body text-center">
+                <h5 class="card-title">Hospital Management System</h5>
+                <p class="card-text">A complete system to manage patients, doctors & appointments with digital records.
+                </p>
+                <a href="#" class="btn btn-outline-primary btn-sm">🔗 View Project</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="col-12 col-sm-6 col-md-4" data-aos="zoom-in-up">
+            <div class="card project-card h-100 bg-dark text-white border-0 shadow-lg">
+              <div class="card-img-wrapper">
+                <img src="Imgsrc.png" class="card-img-top" alt="Portfolio Website" />
+              </div>
+              <div class="card-body text-center">
+                <h5 class="card-title">Portfolio Website</h5>
+                <p class="card-text">My personal responsive portfolio created with HTML5, CSS3, Bootstrap & JS.</p>
+                <a href="Portfolio.html#" class="btn btn-outline-primary btn-sm">🔗 View Project</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="col-12 col-sm-6 col-md-4" data-aos="zoom-in-up">
+            <div class="card project-card h-100 bg-dark text-white border-0 shadow-lg">
+              <div class="card-img-wrapper">
+                <img src="Analytics-Dashboard.png" class="card-img-top" alt="Analytics Dashboard" />
+              </div>
+              <div class="card-body text-center">
+                <h5 class="card-title">Upcoming Project</h5>
+                <p class="card-text"> Analytical dahboard using power Bi and tools.</p>
+                <a href="#" class="btn btn-outline-primary btn-sm">🔗 View Project</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- !!...Services Section Here...!!  -->
+
+    <section class="section-container" id="Service-section">
+      <div class="container text-center">
+        <span class="text-white text-uppercase main-txt">What i will do for you</span>
+        <h2 class="txt-green fw-semibold "> My Services</h2>
+
+        <div class="row">
+          <!-- Web Design Service -->
+          <div class="col-md-6 col-lg-4 mb-4" data-aos="zoom-in" data-aos-delay="100">
+            <div class="service-card">
+              <div class="service-icon"><i class="fas fa-laptop-code"></i></div>
+              <div class="service-title">Web Design</div>
+              <div class="service-desc text-white">
+                Modern, clean, and responsive websites tailored to your brand. I create user-friendly interfaces with
+                stunning visuals.
+              </div>
+            </div>
+          </div>
+
+          <!-- Data Analytics Service -->
+          <div class="col-md-6 col-lg-4 mb-4" data-aos="zoom-out" data-aos-delay="200">
+            <div class="service-card">
+              <div class="service-icon"><i class="fas fa-chart-line"></i></div>
+              <div class="service-title">Data Analytics</div>
+              <div class="service-desc text-white">
+                Transform raw data into powerful insights. I build dashboards, run analysis, and help you make
+                data-driven decisions.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- !!!-- Contact Section Here...!!!  -->
+
+    <section id="contact" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-4 Contact-section">📩 Contact Me</h2>
+        <p class="text-center mb-5 ">
+          I'd love to hear from you! Feel free to reach out for collaborations or just a friendly hello 👋
+        </p>
+        <div class="row">
+
+          <!-- Contact Info -->
+          <div class="col-md-4 text-center mb-4">
+            <i class="bi bi-envelope" style="font-size: 2rem;"></i>
+            <h5 class="mt-3">Email id</h5>
+            <p><a href="mailto:yourname@example.com" style="color:chocolate;">kumarabhishek800287@gmail.com</a></p>
+          </div>
+
+          <div class="col-md-4 text-center mb-4">
+            <i class="bi bi-telephone" style="font-size: 2rem;"></i>
+            <h5 class="mt-3">Phone</h5>
+            <p><a href="tel:+91XXXXXXXXXX" style="color:chocolate;">+91 8002875533</a></p>
+          </div>
+
+          <div class="col-md-4 text-center mb-4">
+            <i class="bi bi-geo-alt" style="font-size: 2rem;"></i>
+            <h5 class="mt-3">Location</h5>
+            <p>Greater Noida, <U class="P"></U></p>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="row mt-5">
+          <div class="col-md-8 mx-auto">
+            <form action="save_contact.php" method="POST">
+              <div class="mb-3">
+                <label for="name" class="form-label">Full Name:</label>
+                <input type="text" class="form-control bg-dark custom-input" id="name" name="name" required>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label"> Email id:</label>
+                <input type="email" class="form-control bg-dark custom-input" id="name" name="name" required>
+              </div>
+
+              <div class="mb-3">
+                <label for="email" class="form-label">Address:</label>
+                <input type="email" class="form-control bg-dark custom-input" id="name" name="name" required>
+              </div>
+
+              <div class="mb-3">
+                <label for="message" class="form-label"> Message:</label>
+                <textarea class="form-control bg-dark custom-input" id="name" name="name" required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-warning w-100">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1200, once: true });
+  </script>
+</body>
+
+</html>
